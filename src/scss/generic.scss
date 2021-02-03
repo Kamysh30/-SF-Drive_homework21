@@ -1,0 +1,72 @@
+.is-animated {
+  transition: all 500ms ease-in;
+}
+
+.is-desktop {
+     display: none;
+
+     @include xl {
+       display: block;
+     }
+   }
+
+
+h2, h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+ 
+  text-align: center;
+ 
+  color: #1B1B1B;}
+  @media only screen and (min-width: 768px) {
+    h2, h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    min-height: 60px;
+  }}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .is-mobile {
+    display: none;
+  }
+}
+//.is-tablet {
+//  display: none;
+//}
+
+
+
+@media  (max-width: 767px) {
+
+  .is-desktop {
+    display: none;
+  }
+  .is-tablet {
+    display: none;
+  }
+
+  body {
+    width: 100vw;
+  }
+
+  .is-mobile {
+    max-width: 335px;
+    font-family: Roboto-regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #494848;
+    margin: 8px 3px;
+
+  }
+
+}

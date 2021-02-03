@@ -1,0 +1,320 @@
+//sass --watch src/scss/style.scss:src/css/style.css
+//"dev": "node app.js",
+//browser-sync start --server --files "css/*.css, *.html, js/*.js"
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./normalize.scss";
+@import "./header.scss";
+@import "./generic.scss";
+@import "./footer.scss";
+@import "./mobile-menu.scss";
+@import "./form.scss";
+html {
+  overflow-x: hidden;
+  min-height: 1200px;
+}
+//header
+.main-header-logo {
+
+  margin-left: 0px;
+}
+
+
+main {
+
+  align-content: center;
+  margin-top: 7px;
+}
+
+
+img.main-page-logo {
+  max-width: 242px;
+  align-self: center;
+  padding: 0;
+  margin-top: 28px;
+  @include xl{
+    min-width: 360px;
+    margin: -1px auto;
+    align-self: center;
+
+  }
+}
+
+.faq-section {
+
+  margin: 0 -3px 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  @include xl{
+    margin: 0 0 46px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  }
+
+
+h1 {
+  font-family: Roboto,sans-serif;
+  font-size: 32px;
+  margin: 39px 0 9px 0;
+  min-height: 40px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  @include xl{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 60px;
+    min-height: 77px;
+    margin-bottom: 31px;
+  }}
+
+
+.description {
+
+  max-width: 335px;
+  font-family: Roboto-regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #494848;
+  margin:0 auto;
+
+  @include xl{
+   max-width: 930px;
+    min-height: 105px;
+    font-family: Roboto-regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:24px;
+    line-height: 35px;
+    color: #494848;
+  padding-left: 6px;
+
+  }}
+
+
+.question-section {
+  margin-top: 30px;
+max-width: 335px;
+  @include xl{
+    max-width: 1026px;
+    margin-top: -10px;
+
+  }
+}
+
+.collapse {
+  width: 335px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding:14px 15px 15px 20px;
+  cursor: url('cursor.png'), pointer;
+  margin-bottom: 15px;
+  background: #F7F7F8;
+  border-radius: 6px;
+  color: black;
+  text-align: left;
+height: 100%;
+  line-height: 1.5em;
+//font for mac
+  font-family: Roboto-regular;
+  font-size: 14px;
+  @include xl {
+  width: 1026px;
+  min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13px 0 22px;
+    cursor: url('cursor.png'), pointer;
+    margin-bottom: 14px;
+    background: #F7F7F8;
+    border-radius: 6px;
+  margin-left: 0;
+    line-height: 150%;
+    font-family: Roboto-regular;
+    font-size: 20px;
+    color: black;
+  }}
+//.collapse:nth-child(1){  min-height: 70px;
+//  @include xl {
+//    min-height: 66px;}}
+//
+//.collapse:nth-child(3){
+//  min-height: 70px;
+//  @include xl {
+//    min-height: 66px;}}
+//
+//.collapse:nth-child(4){
+//  min-height: 70px;
+//@include xl {
+//  min-height: 66px;
+//
+//}
+//}
+
+
+
+.collapse:after{
+  content: '\2039';
+  color: #A0A7AD;
+  font-weight: bold;
+  margin-left: 5px;
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin-right: 10px;
+  text-align: right;
+  @include xl{
+    text-align: right;
+  content: '\2039';
+  color: #A0A7AD;
+  font-weight: bold;
+  margin-left: 5px;
+  transform: rotate(-90deg);
+  font-size: 2.2em;
+  margin-right: 20px;
+}}
+
+
+button:hover {
+  background: rgba(97, 161, 153, 0.1);
+  transition: all 0.3s ease-out;
+@include xl{
+  background: rgba(97, 161, 153, 0.1);
+  transition: all 0.3s ease-out;
+}}
+
+button:not(.active){
+  border:none;
+  background: #F7F7F8;
+  transition: all 0.3s ease-out;
+  @include xl{
+    border:none;
+    transition: all 0.3s ease-out;
+
+    background: #F7F7F8;
+ }
+}
+
+
+button.active, button:focus {
+  background: rgba(97, 161, 153, 0.15);
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5em;
+  color:#61A199;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-out;
+  @include xl {
+    background: rgba(97, 161, 153, 0.15);
+    white-space: nowrap;
+    /* Text M */
+    transition: all 0.3s ease-out;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 147.3%;
+     color:
+             #61A199;
+    border: none;
+    outline: none;
+  }
+}
+
+.active, .collapse:hover {
+  background-color: rgba(97, 161, 153, 0.15);
+  border-radius: 6px;
+border: none;
+}
+
+
+.active:after {
+  content: '\203A';
+  color: #61A199;
+  //transform-origin: center;
+
+}
+
+.content {
+  max-height:0;
+  outline: none;
+  width: 250px;
+  overflow: hidden;
+
+  transition: max-height 0.3s ease-out;
+  background: rgba(97, 161, 153, 0.15);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 147.3%;
+   color: #1B1B1B;
+  background: white;
+  text-align: left;
+  margin-left: 20px ;
+  border: none;
+  @include xl {
+    width: 784px;
+    max-height: 0;
+    overflow: hidden;
+    max-width: 850px;
+    transition: max-height 0.3s ease-out;
+    background: rgba(97, 161, 153, 0.15);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 147.3%;
+    color: #1B1B1B;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+text-align: left;
+    margin-left: 20px ;
+    border: none;
+  }}
+
+ .style-active {
+   width: 250px;
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background: white;
+   margin-top: 0;
+   margin-left: 20px;
+   text-align: left;
+   @include xl{
+   width: 784px;
+    margin-bottom: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background: white;
+   margin-top: 20px;
+   margin-left: 20px;
+text-align: left;
+}}

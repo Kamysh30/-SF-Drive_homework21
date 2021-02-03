@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Roboto-medium";
+  src: url("../fonts/Roboto-medium.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-regular.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icon";
+  src: url("../fonts/icon.eot");
+  src: url("../fonts/icon.eot?#iefix") format("embedded-opentype"), url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype"), url("../fonts/icon.svg#icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*=icon-]:before {
+  display: inline-block;
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "A";
+}
+
+.icon-vk:before {
+  content: "B";
+}
+
+.icon-insta:before {
+  content: "C";
+}
+
+.icon-facebook:before {
+  content: "D";
+}
+
+.icon-close:before {
+  content: "E";
+}
+
+.icon-down:before {
+  content: "F";
+}
+
+.icon-up:before {
+  content: "G";
+}
+
+.icon-cursor:before {
+  content: "H";
+}
+
+.icon-leftarrow:before {
+  content: "I";
+}
+
+.icon-calend:before {
+  content: "K";
+}
+
+.icon-star:before {
+  content: "N";
+}
+
+.icon-isofix:before {
+  content: "O";
+}
+
+.icon-airbag:before {
+  content: "P";
+}
+
+.icon-webasto:before {
+  content: "Q";
+}
+
+.icon-auxcable:before {
+  content: "R";
+}
+
+.icon-bluetooth:before {
+  content: "S";
+}
+
+.icon-cruise:before {
+  content: "T";
+}
+
+.icon-condition:before {
+  content: "U";
+}
+
+.icon-multimedia:before {
+  content: "V";
+}
+
+.icon-navigation:before {
+  content: "W";
+}
+
+.icon-checked:before {
+  content: "X";
+}
+
+.icon-leftarr:before {
+  content: "Y";
+}
+
+.icon-rightarr:before {
+  content: "Z";
+}
+
+.icon-price:before {
+  content: "a";
+}
+
+.icon-dollar:before {
+  content: "b";
+}
+
+.icon-percent:before {
+  content: "c";
+}
+
+.icon-cash:before {
+  content: "d";
+}
+
+/*# sourceMappingURL=fonts.css.map */
